@@ -1,18 +1,62 @@
 <template>
+  <header><h1>标题</h1></header>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="left">
+      <ItemTemplate><ItemOne /></ItemTemplate>
+      <ItemTemplate> <ItemTwo /></ItemTemplate>
+    </div>
+    <div class="center"><ChinaMap /></div>
+    <div class="right">
+      <ItemTemplate><ItemThree /></ItemTemplate>
+      <ItemTemplate> <ItemFour /></ItemTemplate>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ItemTemplate from '@/components/ItemTemplate.vue'
+import ItemOne from '@/components/ItemOne.vue'
+import ItemTwo from '@/components/ItemTwo.vue'
+import ItemThree from '@/components/ItemThree.vue'
+import ItemFour from '@/components/ItemFour.vue'
+import ChinaMap from '@/components/ChinaMap.vue'
 
 export default {
-  name: 'HomeView',
+  setup () {
+
+  },
   components: {
-    HelloWorld
+    ItemTemplate,
+    ItemOne,
+    ItemTwo,
+    ItemThree,
+    ItemFour,
+    ChinaMap
   }
 }
 </script>
+
+<style lang="scss" scoped>
+header {
+  height: 3.125rem;
+  line-height: 3.125rem;
+  text-align: center;
+  color: #fff;
+}
+.home {
+  width: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.2);
+  display: flex;
+  padding: 0.625rem;
+  .left,
+  .right {
+    .item-template {
+      margin: 0.625rem;
+    }
+  }
+  .center {
+    flex: 1;
+    margin: 0.625rem 0;
+  }
+}
+</style>
