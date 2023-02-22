@@ -44,7 +44,7 @@ export default {
       })
 
       window.addEventListener('resize', () => {
-        console.log('resize')
+        // console.log('resize')
         myChart.resize()
       })
     })

@@ -14,12 +14,12 @@
 </template>
 
 <script>
-import ItemTemplate from '@/components/ItemTemplate.vue'
-import ItemOne from '@/components/ItemOne.vue'
-import ItemTwo from '@/components/ItemTwo.vue'
-import ItemThree from '@/components/ItemThree.vue'
-import ItemFour from '@/components/ItemFour.vue'
-import ChinaMap from '@/components/ChinaMap.vue'
+import ItemTemplate from '@/components/home/ItemTemplate.vue'
+import ItemOne from '@/components/home/ItemOne.vue'
+import ItemTwo from '@/components/home/ItemTwo.vue'
+import ItemThree from '@/components/home/ItemThree.vue'
+import ItemFour from '@/components/home/ItemFour.vue'
+import ChinaMap from '@/components/home/ChinaMap.vue'
 
 export default {
   setup () {

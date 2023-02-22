@@ -10,6 +10,14 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/calendar',
+    name: 'calendar',
+    component: import(/* webpackChunkName: "calender" */'../views/CalendarView.vue'),
+    meta: {
+      isShow: true
+    }
+  },
+  {
     path: '/404',
     name: 'NotFound',
     component: NotFound
